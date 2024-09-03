@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <div>
+                <label for="name">Name</label>
+                <i class="fas fa-user"></i>
+                <input required="text" id="name" name="name" placeholder="Enter Username">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <i class="far fa-envelope"></i>
+                <input required type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+                <input required type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input required type="date" id="dob" name="dob">
+            </div>
+            <div>
+                <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+                <label for="acceptTerms">Accept Terms & Conditions</label>
+            </div>
+            <div>
+                <button id="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <h2>Registered Users</h2>
+    <div class="user-history">
+        <h1>Entries</h1>
+        <table id="history" class="history">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted terms?</th>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
