@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <td>${user.email}</td>
             <td>${user.password}</td>
             <td>${user.dob}</td>
-            <td>${user.acceptTerms ? 'Yes' : 'No'}</td>
+            <td>${user.acceptTerms ? 'True' : 'False'}</td>
         `;
     }
 });
