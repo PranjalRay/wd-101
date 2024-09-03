@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const user = { name, email, password, dob, acceptTerms };
         saveUser(user);
         addUserToTable(user);
-        formElement.reset();
     });
     function calculateAge(dob) {
         const diff = Date.now() - dob.getTime();
