@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
         const user = { name, email, password, dob, acceptTerms };
-        saveUser(user);e
+        saveUser(user);
         addUserToTable(user);
         formElement.reset();
     });
